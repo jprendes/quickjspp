@@ -1,0 +1,8 @@
+<map id="qjs::js_traits&lt; std::optional&lt; T &gt; &gt;::unwrap" name="qjs::js_traits&lt; std::optional&lt; T &gt; &gt;::unwrap">
+<area shape="rect" id="node1" title="If conversion to T fails returns std::nullopt." alt="" coords="5,49,197,90"/>
+<area shape="rect" id="node2" href="$quickjs_8h.html#afaa20c47565bc704c6c85f3d77254e7d" title=" " alt="" coords="257,5,362,32"/>
+<area shape="rect" id="node5" href="$quickjs_8c.html#a8551eaac7ef616910807cebdc515760d" title=" " alt="" coords="245,56,373,83"/>
+<area shape="rect" id="node6" href="$quickjs_8h.html#a149f24b67e745bad93573b3b4c80db4c" title=" " alt="" coords="270,107,349,133"/>
+<area shape="rect" id="node3" href="$quickjs_8c.html#aa059f309c30fd5166d16c82a97973146" title=" " alt="" coords="421,5,540,32"/>
+<area shape="rect" id="node4" href="$quickjs_8c.html#ab1ea3fad7d138be12144a38be4d36423" title=" " alt="" coords="588,5,723,32"/>
+</map>

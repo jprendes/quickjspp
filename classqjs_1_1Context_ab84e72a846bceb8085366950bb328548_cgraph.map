@@ -1,0 +1,12 @@
+<map id="qjs::Context::newObject" name="qjs::Context::newObject">
+<area shape="rect" id="node1" title="returns new Object()" alt="" coords="5,132,183,159"/>
+<area shape="rect" id="node2" href="$quickjs_8c.html#afc0d8ea75588216ec132a6e1655524a7" title=" " alt="" coords="239,107,351,133"/>
+<area shape="rect" id="node9" href="$classqjs_1_1Value.html#a8e2a5be6c89f30cee044b884e30bf819" title="Use context.newValue(val) instead." alt="" coords="231,157,360,184"/>
+<area shape="rect" id="node3" href="$quickjs_8c.html#a73738c650f11459db0d7af3dcdf8316b" title=" " alt="" coords="408,107,589,133"/>
+<area shape="rect" id="node4" href="$quickjs_8c.html#aad24bdf2bcbb0ce55462fe6074dac8a5" title=" " alt="" coords="637,5,824,32"/>
+<area shape="rect" id="node5" href="$quickjs_8c.html#aab0be018b8f7bdcff45226f502c3f820" title=" " alt="" coords="675,56,786,83"/>
+<area shape="rect" id="node6" href="$quickjs_8c.html#aed229eb80b3b03a2275471dee93c69d6" title=" " alt="" coords="675,107,786,133"/>
+<area shape="rect" id="node7" href="$quickjs_8c.html#ad6926e49955be5e10423f6df8d8cff3e" title=" " alt="" coords="674,157,787,184"/>
+<area shape="rect" id="node8" href="$quickjs_8c.html#a030c2e98b1775a7e3bdd13be1400b1fe" title=" " alt="" coords="638,208,823,235"/>
+<area shape="rect" id="node10" href="$quickjs_8h.html#ad80a83d73e9b7d872b88fbf2943aebe9" title=" " alt="" coords="441,157,557,184"/>
+</map>

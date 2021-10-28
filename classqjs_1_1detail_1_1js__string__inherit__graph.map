@@ -1,0 +1,5 @@
+<map id="qjs::detail::js_string" name="qjs::detail::js_string">
+<area shape="rect" id="node1" title="Fake std::string_view which frees the string on destruction." alt="" coords="14,169,163,196"/>
+<area shape="rect" id="node2" title="STL class." alt="" coords="26,95,151,121"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="5,5,172,47"/>
+</map>

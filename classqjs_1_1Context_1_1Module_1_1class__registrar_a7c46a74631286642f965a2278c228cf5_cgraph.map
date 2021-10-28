@@ -1,0 +1,8 @@
+<map id="qjs::Context::Module::class_registrar::class_registrar" name="qjs::Context::Module::class_registrar::class_registrar">
+<area shape="rect" id="node1" title=" " alt="" coords="5,16,172,72"/>
+<area shape="rect" id="node2" href="$classqjs_1_1Context.html#ab84e72a846bceb8085366950bb328548" title="returns new Object()" alt="" coords="220,31,397,57"/>
+<area shape="rect" id="node3" href="$quickjs_8c.html#afc0d8ea75588216ec132a6e1655524a7" title=" " alt="" coords="454,5,566,32"/>
+<area shape="rect" id="node5" href="$classqjs_1_1Value.html#a8e2a5be6c89f30cee044b884e30bf819" title="Use context.newValue(val) instead." alt="" coords="445,56,575,83"/>
+<area shape="rect" id="node4" href="$quickjs_8c.html#a73738c650f11459db0d7af3dcdf8316b" title=" " alt="" coords="623,5,804,32"/>
+<area shape="rect" id="node6" href="$quickjs_8h.html#ad80a83d73e9b7d872b88fbf2943aebe9" title=" " alt="" coords="655,56,771,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="qjs::Context::global" name="qjs::Context::global">
+<area shape="rect" id="node1" title="returns globalThis" alt="" coords="5,31,153,57"/>
+<area shape="rect" id="node2" href="$quickjs_8c.html#ad2256fd11b2bdbdd19ddf38f681814bd" title=" " alt="" coords="201,5,349,32"/>
+<area shape="rect" id="node4" href="$classqjs_1_1Value.html#a8e2a5be6c89f30cee044b884e30bf819" title="Use context.newValue(val) instead." alt="" coords="211,56,340,83"/>
+<area shape="rect" id="node3" href="$quickjs_8h.html#a775522f2d084fc8fa0fcb33f390006b4" title=" " alt="" coords="404,5,507,32"/>
+<area shape="rect" id="node5" href="$quickjs_8h.html#ad80a83d73e9b7d872b88fbf2943aebe9" title=" " alt="" coords="397,56,513,83"/>
+</map>

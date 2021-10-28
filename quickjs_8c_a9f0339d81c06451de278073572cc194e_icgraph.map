@@ -1,0 +1,13 @@
+<map id="JS_NewClass" name="JS_NewClass">
+<area shape="rect" id="node1" title=" " alt="" coords="696,89,801,116"/>
+<area shape="rect" id="node2" href="$quickjs-libc_8c.html#a066e7962ce24f22d5df20968a8baa346" title=" " alt="" coords="509,5,591,32"/>
+<area shape="rect" id="node5" href="$quickjs-libc_8c.html#a08cea1a0226b7603e6969e2208d99d55" title=" " alt="" coords="506,56,594,83"/>
+<area shape="rect" id="node7" href="$structqjs_1_1js__traits_3_01std_1_1shared__ptr_3_01T_01_4_01_4.html#af3558afeef079826c58411353c8ccce0" title="Register class in QuickJS context." alt="" coords="474,107,626,163"/>
+<area shape="rect" id="node9" href="$structqjs_1_1js__traits_3_01detail_1_1function_01_4.html#afe383c63f389edaf9f878cd30062d37f" title=" " alt="" coords="452,187,648,229"/>
+<area shape="rect" id="node3" href="$quickjs-libc_8c.html#adcca2b4a661355e6ff87a0def2339894" title=" " alt="" coords="239,5,377,32"/>
+<area shape="rect" id="node4" href="$qjs_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="57,31,112,57"/>
+<area shape="rect" id="node6" href="$quickjs-libc_8c.html#a0e65c67dfff872a664f8d29e7eae5a61" title=" " alt="" coords="236,56,380,83"/>
+<area shape="rect" id="node8" href="$structqjs_1_1js__traits_3_01std_1_1shared__ptr_3_01T_01_4_01_4.html#a046f811ae16e0cb24170a8425f3e8780" title="Create a JSValue from std::shared_ptr&lt;T&gt;." alt="" coords="212,114,404,155"/>
+<area shape="rect" id="node10" href="$classqjs_1_1Context.html#aae629cc551168d549a405db5c762b61e" title=" " alt="" coords="243,195,373,221"/>
+<area shape="rect" id="node11" href="$classqjs_1_1Context.html#a4392a23648acfc4bf6b445336efb5007" title=" " alt="" coords="5,195,164,221"/>
+</map>

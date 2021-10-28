@@ -1,0 +1,6 @@
+<map id="qjs::Context::getException" name="qjs::Context::getException">
+<area shape="rect" id="node1" title="returns current exception associated with context, and resets it." alt="" coords="5,31,199,57"/>
+<area shape="rect" id="node2" href="$quickjs_8c.html#a8551eaac7ef616910807cebdc515760d" title=" " alt="" coords="247,5,375,32"/>
+<area shape="rect" id="node3" href="$classqjs_1_1Value.html#a8e2a5be6c89f30cee044b884e30bf819" title="Use context.newValue(val) instead." alt="" coords="247,56,376,83"/>
+<area shape="rect" id="node4" href="$quickjs_8h.html#ad80a83d73e9b7d872b88fbf2943aebe9" title=" " alt="" coords="424,56,540,83"/>
+</map>

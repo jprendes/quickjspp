@@ -1,0 +1,24 @@
+<map id="qjs::js_traits&lt; std::shared_ptr&lt; T &gt; &gt;::wrap" name="qjs::js_traits&lt; std::shared_ptr&lt; T &gt; &gt;::wrap">
+<area shape="rect" id="node1" title="Create a JSValue from std::shared_ptr&lt;T&gt;." alt="" coords="5,155,197,197"/>
+<area shape="rect" id="node2" href="$quickjs_8h.html#ad80a83d73e9b7d872b88fbf2943aebe9" title=" " alt="" coords="263,112,379,139"/>
+<area shape="rect" id="node3" href="$quickjs_8c.html#a659dc0db7e440fd6eb012d613627faa3" title=" " alt="" coords="248,163,395,189"/>
+<area shape="rect" id="node10" href="$structqjs_1_1js__traits_3_01std_1_1shared__ptr_3_01T_01_4_01_4.html#af3558afeef079826c58411353c8ccce0" title="Register class in QuickJS context." alt="" coords="245,269,397,325"/>
+<area shape="rect" id="node4" href="$quickjs_8c.html#a73738c650f11459db0d7af3dcdf8316b" title=" " alt="" coords="445,107,627,133"/>
+<area shape="rect" id="node5" href="$quickjs_8c.html#aad24bdf2bcbb0ce55462fe6074dac8a5" title=" " alt="" coords="675,5,861,32"/>
+<area shape="rect" id="node6" href="$quickjs_8c.html#aab0be018b8f7bdcff45226f502c3f820" title=" " alt="" coords="713,56,823,83"/>
+<area shape="rect" id="node7" href="$quickjs_8c.html#aed229eb80b3b03a2275471dee93c69d6" title=" " alt="" coords="713,107,823,133"/>
+<area shape="rect" id="node8" href="$quickjs_8c.html#ad6926e49955be5e10423f6df8d8cff3e" title=" " alt="" coords="711,157,825,184"/>
+<area shape="rect" id="node9" href="$quickjs_8c.html#a030c2e98b1775a7e3bdd13be1400b1fe" title=" " alt="" coords="675,208,861,235"/>
+<area shape="rect" id="node11" href="$quickjs_8c.html#a853f0924d441ea4225488f37c8b69f9a" title=" " alt="" coords="483,157,589,184"/>
+<area shape="rect" id="node12" href="$quickjs_8c.html#a5644dc5dba0d760dcc06cc1a79e256cc" title=" " alt="" coords="479,208,593,235"/>
+<area shape="rect" id="node13" href="$quickjs_8c.html#af1866c7f8a91153f11602a2b521d9399" title=" " alt="" coords="477,259,595,285"/>
+<area shape="rect" id="node14" href="$quickjs_8c.html#a3f0ebc39396c0cd909ec04585f92b1b9" title=" " alt="" coords="457,309,615,336"/>
+<area shape="rect" id="node15" href="$quickjs_8c.html#a9f0339d81c06451de278073572cc194e" title=" " alt="" coords="483,360,589,387"/>
+<area shape="rect" id="node20" href="$quickjs_8c.html#a4f56d0a794368a8861c89819fc79cdb5" title=" " alt="" coords="477,411,595,437"/>
+<area shape="rect" id="node21" href="$quickjs_8c.html#a742ee8af627e4502758e503d152b0cd0" title=" " alt="" coords="471,461,601,488"/>
+<area shape="rect" id="node16" href="$quickjs_8c.html#ac8c91ebeea0cf07e3079c49a16de739f" title=" " alt="" coords="709,259,827,285"/>
+<area shape="rect" id="node17" href="$quickjs_8c.html#a128673f932e71b867730af75a44e3f97" title=" " alt="" coords="698,309,838,336"/>
+<area shape="rect" id="node18" href="$quickjs_8c.html#a5a0aca30abbb4d4ae86746541bf4cbc7" title=" " alt="" coords="708,360,828,387"/>
+<area shape="rect" id="node19" href="$quickjs_8c.html#ab515cd66efd3e476d2c22d6a55f13194" title=" " alt="" coords="711,411,825,437"/>
+<area shape="rect" id="node22" href="$quickjs_8c.html#a0ec52a675282f321a6f42aa1298a53fe" title=" " alt="" coords="725,461,811,488"/>
+</map>

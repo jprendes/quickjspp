@@ -1230,6 +1230,16 @@ public:
         return *this;
     }
 
+    template <typename T>
+    Value& operator =(T &&val) {
+        if(!ctx) return *this;
+        JS_FreeValue(ctx, v);
+        v = js_traits<std::decay_t<T>>::wrap(ctx, std::forward<T>(val));
+        if(JS_IsException(v))
+            throw exception{ctx};
+        return *this;
+    }
+
     bool operator ==(JSValueConst other) const
     {
         return JS_VALUE_GET_TAG(v) == JS_VALUE_GET_TAG(other) && JS_VALUE_GET_PTR(v) == JS_VALUE_GET_PTR(other);
@@ -1451,20 +1461,18 @@ public:
         JSContext * ctx;
         const char * name;
 
-        using nvp = std::pair<const char *, Value>;
-        std::vector<nvp> exports;
+        // Use unique_ptr so that references to the stored value remain valid.
+        std::unordered_map<std::string, std::unique_ptr<Value>> exports;
     public:
         Module(JSContext * ctx, const char * name) : ctx(ctx), name(name)
         {
             m = JS_NewCModule(ctx, name, [](JSContext * ctx, JSModuleDef * m) noexcept {
                 auto& context = Context::get(ctx);
-                auto it = std::find_if(context.modules.begin(), context.modules.end(),
-                                       [m](const Module& module) { return module.m == m; });
-                if(it == context.modules.end())
-                    return -1;
-                for(const auto& e : it->exports)
+                if (context.modules.count(m) == 0) return -1;
+                auto & mod = *context.modules[m].get();
+                for(const auto & [name, value_ptr] : mod.exports)
                 {
-                    if(JS_SetModuleExport(ctx, m, e.first, JS_DupValue(ctx, e.second.v)) != 0)
+                    if(JS_SetModuleExport(ctx, m, name.c_str(), JS_DupValue(ctx, value_ptr->v)) != 0)
                         return -1;
                 }
                 return 0;
@@ -1473,10 +1481,18 @@ public:
                 throw exception{ctx};
         }
 
+        Value & operator[](const char * name) {
+            if (exports.count(name) > 0) return *exports[name].get();
+            auto value_ptr = std::make_unique<Value>(ctx, JS_UNDEFINED);
+            auto & value = *value_ptr.get();
+            exports[name] = std::move(value_ptr);
+            JS_AddModuleExport(ctx, m, name);
+            return value;
+        }
+
         Module& add(const char * name, JSValue&& value)
         {
-            exports.push_back({name, {ctx, std::move(value)}});
-            JS_AddModuleExport(ctx, m, name);
+            (*this)[name] = std::move(value);
             return *this;
         }
 
@@ -1512,7 +1528,7 @@ public:
         template <typename F>
         Module& function(const char * name, F&& f)
         {
-            return add(name, js_traits<decltype(std::function{std::forward<F>(f)})>::wrap(ctx, std::forward<F>(f)));
+            return add(name, std::forward<F>(f));
         }
 
         // class register wrapper
@@ -1585,7 +1601,7 @@ public:
                     name = this->name;
                 Value ctor = context.newValue(qjs::ctor_wrapper<T, Args...>{name});
                 JS_SetConstructor(context.ctx, ctor.v, prototype.v);
-                module.add(name, std::move(ctor));
+                module[name] = std::move(ctor);
                 return *this;
             }
 
@@ -1624,7 +1640,10 @@ public:
 
     };
 
-    std::vector<Module> modules;
+    // A map of `Module` objects to work around the lack of opaque in
+    // JSModuleDef. Use std::unique_ptr so that references to the
+    // Module remain valid.
+    std::unordered_map<JSModuleDef *, std::unique_ptr<Module>> modules;
 private:
     void init()
     {
@@ -1680,8 +1699,10 @@ public:
     /** Create module and return a reference to it */
     Module& addModule(const char * name)
     {
-        modules.emplace_back(ctx, name);
-        return modules.back();
+        auto mod_ptr = std::make_unique<Module>(ctx, name);
+        auto & mod = *mod_ptr.get();
+        modules[mod.m] = std::move(mod_ptr);
+        return mod;
     }
 
     /** returns globalThis */
